@@ -1,0 +1,65 @@
+.Header-section {
+  background-image: url('../images/hero-img.jpg'); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 120vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.logo-big {
+  color: blue;
+  font-size: 45px;
+}
+.logo-small {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Molle', cursive;
+}
+.logo-big1 {
+  color: blue;
+  font-size: 28px;
+}
+.logo-small1 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Molle', cursive;
+}
+.nav-link {
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 18px !important;
+  font-weight: 500;
+}
+.hero-text {
+  margin-top: 400px;
+}
+.footer-top{
+  background-color: rgb(15, 15, 15) !important;
+}
+.footer-bottom{
+  background-color: black !important;
+}
+.footer-about-text{
+  font-size: 14px;
+}
+.footer-title{
+  color: #ffa4a4;
+  font-size: 17px;
+}
+.footer-link{
+  color: white;
+  font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+  .bg-transparent {
+    background-color: rgb(3, 3, 3) !important;
+  }
+  .hero-text {
+    margin-top: 400px;
+  }
+  .nav-link{
+    margin-left: 0 !important;
+  }
+}
