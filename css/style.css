@@ -32,6 +32,11 @@
   font-size: 18px !important;
   font-weight: 500;
 }
+.btn-primary{
+  background-color: blue !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
 .hero-text {
   margin-top: 400px;
 }
