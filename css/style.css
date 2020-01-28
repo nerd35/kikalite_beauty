@@ -57,6 +57,15 @@
   color: white;
   font-size: 14px;
 }
+.contact-title{
+  font-size: 18px;
+}
+.contact-text{
+  font-size: 12px;
+}
+.work-hours{
+  font-size: 14px;
+}
 @media only screen and (max-width: 600px) {
   .bg-transparent {
     background-color: rgb(3, 3, 3) !important;
