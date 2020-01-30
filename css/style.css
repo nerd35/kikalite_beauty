@@ -66,6 +66,14 @@
 .work-hours{
   font-size: 14px;
 }
+.about-title{
+  font-size: 45px;
+  color: #ffa4a4;
+}
+.about-text{
+  font-size: 22px;
+  color: gray;
+}
 @media only screen and (max-width: 600px) {
   .bg-transparent {
     background-color: rgb(3, 3, 3) !important;
