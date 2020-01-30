@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css">
 
     <title>KIKALITE BEAUTY COMPANY</title>
   </head>
   <body>
     <div class=" mb-5">
       <nav
-        class=" container-fluid navbar navbar-expand-lg navbar-dark fixed-top bg-dark"
+        class=" container-fluid navbar navbar-expand-lg navbar-dark bg-dark"
       >
         <div class="container">
           <a class="navbar-brand" href="index.html"
@@ -75,40 +76,63 @@
         </div>
       </nav>
     </div>
-    <div class="container mt-5 mb-5">
-      <div class="row mt-5">
-        <div class="col-lg-12 col-sm-12 mt-5">
-          <div class="about-header-text mt-5">
-          <h2 class="mt-5 about-title text-center">About Kikalite beauty</h2>
-          </div>
-        </div>
-      </div>
+    <div class="container mb-3">
       <div class="row">
-        <div class="col-lg-7 col-sm-12 mt-5">
-          <p class="about-text">Kikalite beauty is a professional beauty outfit that
-            caters to beauty needs and offer beauty related
-            services to women of color from bridal makeup to
-            glamming them up for their big day
-            Our objective is to make sure every woman is being
-            guided to a good skincare routine teaching them
-            using the best organic mineral product to make
-            them.<br/><br/>
-            Also our target ito make sure every woman knows
-            how to apply makeup the right way.<br/><br/>
-            Futhermore, we take it also in educating ladies on
-            how to make extra income from learning the art of
-            makeup professionally. We operate both online and
-            offline course with an affordable fee to meet every
-            ladies budget.</p>
-            
-        </div>
-        <div class="col-lg-5 col-sm-12 mt-3 ">
-          <div class="mt-5">
-            <img src="images/hero-img1.jpg" alt="aboutimage" style="width: 500px;"/>
+        <div class="col-lg-12 col-sm-12">
+          <div class="about-header-text">
+          <h2 class="mt-5 about-title text-center">Gallery</h2>
           </div>
         </div>
       </div>
+      
     </div>
+    <div class="container">
+      <div class="row text-center text-lg-left">
+    
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/hero img.jpg" target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/hero img.jpg" alt="">
+              </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/hero-img.jpg"target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/hero-img.jpg" alt="">
+              </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/IMG5.jpg" target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/IMG5.jpg" alt="">
+              </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/hero-img1.jpg" target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/hero-img1.jpg" alt="">
+              </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/IMG2.jpg" target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/IMG2.jpg" alt="">
+              </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/IMG3.jpg" target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/IMG3.jpg" alt="">
+              </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/IMG4.jpg" target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/IMG4.jpg" alt="">
+              </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a href="images/img1.jpg" target="_blank" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="images/img1.jpg" alt="">
+              </a>
+        </div>
+      </div>
+    
+    </div>
+
     <div class="container-fluid p-0 footer-top bg-dark mt-5">
       <div class="container">
         <div class="row">
@@ -180,5 +204,43 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      popup = {
+    init: function(){
+      $('figure').click(function(){
+        popup.open($(this));
+      });
+      
+      $(document).on('click', '.popup img', function(){
+        return false;
+      }).on('click', '.popup', function(){
+        popup.close();
+      })
+    },
+    open: function($figure) {
+      $('.gallery').addClass('pop');
+      $popup = $('<div class="popup" />').appendTo($('body'));
+      $fig = $figure.clone().appendTo($('.popup'));
+      $bg = $('<div class="bg" />').appendTo($('.popup'));
+      $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+      $shadow = $('<div class="shadow" />').appendTo($fig);
+      src = $('img', $fig).attr('src');
+      $shadow.css({backgroundImage: 'url(' + src + ')'});
+      $bg.css({backgroundImage: 'url(' + src + ')'});
+      setTimeout(function(){
+        $('.popup').addClass('pop');
+      }, 10);
+    },
+    close: function(){
+      $('.gallery, .popup').removeClass('pop');
+      setTimeout(function(){
+        $('.popup').remove()
+      }, 100);
+    }
+  }
+  
+  popup.init()
+  
+  </script>
   </body>
 </html>
