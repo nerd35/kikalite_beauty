@@ -82,23 +82,23 @@
           <h4 class="mt-5 contact-title">Drop us a line</h4>
           <p class="contact-text">We are always willing and available to answer your calls and enquiries. Please feel free to contact us anytime
             Please note: we take nothing more than 24 hours to reply your message</p>
-            <form>
+            <form id="contact-form" name="contact-form"  action="contact.php" method="POST">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" id="inputEmail4" placeholder="Your Name">
+                  <input type="text" class="form-control" name="yname" id="inputEmail4" placeholder="Your Name">
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="email" class="form-control" id="inputPassword4" placeholder="Email Address">
+                  <input type="email" class="form-control" name="email" id="inputPassword4" placeholder="Email Address">
                 </div>
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="inputAddress" placeholder="Phone Number">
+                <input type="number" class="form-control" name="phone" id="inputAddress" placeholder="Phone Number">
               </div>
               <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
               </div>
               
-              <button type="submit" class="btn btn-dark">Send</button>
+              <button onclick="document.getElementById('contact-form').submit();" class="btn btn-success">Send</button>
             </form>
         </div>
         <div class="col-lg-5 col-sm-12 mt-5 ml-auto">
