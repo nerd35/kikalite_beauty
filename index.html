@@ -45,27 +45,27 @@
             class=" ml-5 collapse navbar-collapse"
             id="navbarNav"
           >
-            <ul class="navbar-nav ml-5 justify-content-center">
-              <li class="nav-item  active">
-                <a class="nav-link " href="index.html
-                ">HOME</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html">ABOUT </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="lashes.html">LASHES</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="gallery.html">GALLERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">TRAINING</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="contact.html">CONTACT US</a>
-              </li>
-            </ul>
+          <ul class="navbar-nav ml-5 justify-content-center">
+            <li class="nav-item  active">
+              <a class="nav-link " href="index.html
+              ">HOME</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="about.html">ABOUT </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lashes.html">LASHES</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="training.html">TRAINING</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
             <div class="ml-auto">
               <a href="https://www.facebook.com/kikalite-beauty-company-1850817425154542/"><i class="fab fa-facebook-f text-dark fa-lg mr-3 "></i></a>
               <a href="https://twitter.com/kikalite"><i class="fab fa-twitter text-dark fa-lg mr-3"></i></a>
@@ -78,7 +78,7 @@
       <div class="container-fluid mt-5 ">
         <div class="row Header-section mt-5 ">
           <div class="col-lg-12 col-sm-12 hero-text text-center ">
-              <h2 class=" text-light">ENHANCING YOUR <br/>
+              <h2 class=" text-light hero-texting ">ENHANCING YOUR <br/>
                 BEAUTY.</h2>
                 <a href="gallery.html" class="btn btn-primary px-3">See Gallery</a>
           </div>
@@ -97,6 +97,7 @@
             services to women of color from bridal makeup to
             glamming them up for their big day.</h5>
           </div>
+          
           <div class="col-lg-3 col-sm-12 mb-3 mt-3">
             <h4 class="footer-title">INFORMATION</h4>
             <a href="index.html" class="footer-link">Home</a><br/>
@@ -104,24 +105,25 @@
             <a href="gallery.html" class="footer-link">Gallery</a><br/>
             <a href="contact.html" class="footer-link">Contact Us</a><br/>
             <a href="lashes.html" class="footer-link">Lashes</a><br/>
+            <a href="training.html" class="footer-link">Training</a><br/>
           </div>
           <div class="col-lg-3 col-sm-12 mb-3 mt-3">
-            <h4 class="footer-title">ACCOUNT</h4>
-            <a href="#" class="footer-link">My Account</a><br/>
-            <a href="#" class="footer-link">Cart</a><br/>
-            <a href="#" class="footer-link">My Wishlist</a><br/>
-            <a href="#" class="footer-link">Gift Card</a><br/>
-            <a href="#" class="footer-link">Bulk Purchase</a><br/>
+            <h4 class="footer-title">CONTACT US</h4>
+            <p class="text-secondary"><i class="fas fa-map-marker-alt fa-lg"></i>	No 6 chinedu Moore, Lekki, Lagos state. Nigeria</p>
+            <p class=" text-secondary"><i class="fas fa-phone-volume fa-lg"></i>	+234 806 037 9253</p>
+            <p class=" text-secondary"><i class="fas fa-mail-bulk fa-lg"></i> sales@kikalitebeauty.com</p>
+            <p class=" text-secondary"><i class="fas fa-mail-bulk fa-lg "></i> info@kikalitebeauty.com</p>
+            <p class=" text-secondary"><i class="fas fa-mail-bulk fa-lg"></i> bookings@kikalitebeauty.com</p>
           </div>
           
           <div class="col-lg-3 col-sm-12 mb-3 mt-3">
             <h4 class="footer-title">NEWSLETTER</h4>
             <p class="footer-about-text text-dark" >sign up for newsletter to know our latest news and offers.</p>
             <form class="form-group">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email Address"/>
+              <div class="form-group" id="contact-form1" name="contact-form1"  action="newsleter.php" method="POST">
+                <input type="text" class="form-control" name="email" placeholder="Email Address"/>
               </div>
-              <button type="submit" class="border-dark text-dark btn btn transparent">Submit</button>
+              <button onclick="document.getElementById('contact-form1').submit();" class="border-dark text-dark btn btn transparent">Submit</button>
             </form>
           </div>
         </div>

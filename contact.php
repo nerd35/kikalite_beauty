@@ -7,8 +7,8 @@ if(isset( $_POST['email']))
 $email = $_POST['email'];
 if(isset( $_POST['message']))
 $message = $_POST['message'];
-$content="First Name: $fname \n Name: $name \n Email: $email \n Phone Number: $phone \n Message: $message";
-$recipient = "info@shewfoundation.org";
+$content="First Name: $yname  \n Email: $email \n Phone Number: $phone \n Message: $message";
+$recipient = "info@kikalitebeauty.com";
 $subject = "Equiry from visitor";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
