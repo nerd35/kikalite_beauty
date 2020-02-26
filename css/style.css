@@ -32,7 +32,7 @@
   font-size: 18px !important;
   font-weight: 500;
 }
-.btn-primary{
+.btn-primary {
   background-color: blue !important;
   border: 0 !important;
   border-radius: 0 !important;
@@ -40,40 +40,39 @@
 .hero-text {
   margin-top: 400px;
 }
-.hero-texting{
+.hero-texting {
   font-size: 67px;
-
 }
 
-.footer-about-text{
+.footer-about-text {
   font-size: 14px;
 }
-.footer-title{
+.footer-title {
   color: red;
   font-size: 17px;
 }
-.lashes-title{
+.lashes-title {
   color: red;
   text-transform: uppercase;
 }
-.footer-link{
+.footer-link {
   color: black;
   font-size: 14px;
 }
-.contact-title{
+.contact-title {
   font-size: 18px;
 }
-.contact-text{
+.contact-text {
   font-size: 12px;
 }
-.work-hours{
+.work-hours {
   font-size: 14px;
 }
-.about-title{
+.about-title {
   font-size: 45px;
   color: red;
 }
-.about-text{
+.about-text {
   font-size: 22px;
   color: gray;
 }
@@ -84,11 +83,24 @@
   .hero-text {
     margin-top: 300px;
   }
-  .nav-link{
+  .nav-link {
     margin-left: 0 !important;
   }
-  .hero-texting{
+  .hero-texting {
     font-size: 30px;
-  
   }
+  .About-image {
+      background-image: url('../images/hero-img1.jpg'); /* The image used */
+      height: 80vh;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+}
+.About-image {
+  background-image: url('../images/hero-img1.jpg'); /* The image used */
+  height: 80vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
